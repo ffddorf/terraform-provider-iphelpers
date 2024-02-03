@@ -9,6 +9,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 )
 
+// Run the docs generation tool, check its repository for more information on how it works and how docs
+// can be customized.
+//go:generate go run github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs generate -provider-name iphelpers
+
 var (
 	// these will be set by the goreleaser configuration
 	// to appropriate values for the compiled binary.
